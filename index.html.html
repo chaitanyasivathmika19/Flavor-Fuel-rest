@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+
+    <!-- ===== Main Navigation ===== -->
+<nav class="main-nav">
+  <div class="nav-container">
+
+    <!-- Brand / Logo -->
+    <a href="#" class="logo">🍽 Flavor Fuel</a>
+
+<input type="checkbox" class="nav-toggle" id="nav-toggle" hidden />
+  <label for="nav-toggle" class="hamburger">&#9776;</label>
+    <!-- Menu links -->
+<div class="logo"></div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about-section">About</a></li>
+      <li><a href="#menu-grid">Menu</a></li>
+      <li><a href="#footer-contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <header>
+    <h1>Flavor Fuel</h1>
+    <p>Fresh, Fast & Delicious</p>
+  </header>
+<section id="about-section">
+    
+  <div class="about-content">
+    <h2>About Us</h2>
+    <p>Welcome to <strong> Flavor Fuel</strong>, where tradition meets taste! Nestled in the heart of the city, our restaurant is known for its authentic South Indian biryanis, sizzling Indo-Chinese fusion, and flavorful starters that keep our guests coming back for more.</p>
+    
+    <p>At  Flavor Fuel, we believe in using fresh ingredients, age-old recipes, and a pinch of innovation to deliver an unforgettable dining experience. Whether you're here for a hearty family meal, a casual catch-up, or just some spicy comfort food — we’ve got something for everyone.</p>
+
+    <p>Come hungry. Leave happy.</p>
+  </div>
+</section>
+
+<script>
+function toggleInfo(btn) {
+  const info = btn.nextElementSibling;
+  info.style.display = (info.style.display === 'block') ? 'none' : 'block';
+}
+
+function filterItems(category) {
+  const cards = document.querySelectorAll('.food-card');
+  cards.forEach(card => {
+    if (category === 'all' || card.classList.contains(category)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
+
+
+
+   <section class="menu-grid" id="menu-grid">
+  <h2>Our South Indian Delights</h2>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button onclick="filterItems('all')">All</button>
+    <button onclick="filterItems('biryani')">Biryani</button>
+    <button onclick="filterItems('chinese')">Indo-Chinese</button>
+    <button onclick="filterItems('starters')">Starters</button>
+  </div>
+
+  <!-- Food Items Grid -->
+  <div class="grid-container">
+
+    <!-- BIRYANI -->
+    <div class="food-card biryani">
+      <img src="chkbir.jpg" alt="Hyderabadi Chicken Biryani">
+      <h3>Hyderabadi Chicken Biryani</h3>
+      <p class="price">₹260</p>
+      <p class="rating">⭐ 4.6</p>
+      <button class="read-more-btn" onclick="toggleInfo(this)">Read More</button>
+      <p class="more-info">Basmati rice, chicken, saffron, mint, fried onions, whole spices.</p>
+    </div>
+
+    <div class="food-card biryani">
+      <img src="ambbir.jpg" alt="Ambur Mutton Biryani">
+      <h3>Ambur Mutton Biryani</h3>
+      <p class="price">₹280</p>
+      <p class="rating">⭐ 4.7</p>
+      <button class="read-more-btn" onclick="toggleInfo(this)">Read More</button>
+      <p class="more-info">Seeraga samba rice, mutton, red-chilli paste, curd, ghee, coriander.</p>
+    </div>
+
+    <div class="food-card biryani">
+      <img src="vegbir.jpg" alt="Veg Dum Biryani">
+      <h3>Veg Dum Biryani</h3>
+      <p class="price">₹190</p>
+      <p class="rating">⭐ 4.3</p>
+      <button class="read-more-btn" onclick="toggleInfo(this)">Read More</button>
+      <p class="more-info">Basmati rice, carrot, beans, cauliflower, paneer, saffron, spices.</p>
+    </div>
+
+    <!-- INDO-CHINESE -->
+    <div class="food-card chinese">
+      <img src="shzfri.jpg" alt="Schezwan Fried Rice">
+      <h3>Schezwan Fried Rice</h3>
+      <p class="price">₹180</p>
+      <p class="rating">⭐ 4.4</p>
+      <button class="read-more-btn" onclick="toggleInfo(this)">Read More</button>
+      <p class="more-info">Rice, Schezwan sauce, carrots, beans, capsicum, spring onion.</p>
+    </div>
+
+    <div class="food-card chinese">
+      <img src="nood.jpg" alt="Chilli Garlic Noodles">
+      <h3>Chilli Garlic Noodles</h3>
+      <p class="price">₹170</p>
+      <p class="rating">⭐ 4.2</p>
+      <button class="read-more-btn" onclick="toggleInfo(this)">Read More</button>
+      <p class="more-info">Hakka noodles, garlic, dried red chilli, soy sauce, sesame oil.</p>
+    </div>
+
+    <div class="food-card chinese">
+      <img src="manch.jpg" alt="Gobi Manchurian">
+      <h3>Gobi Manchurian</h3>
+      <p class="price">₹160</p>
+      <p class="rating">⭐ 4.1</p>
+      <button class="read-more-btn" onclick="toggleInfo(this)">Read More</button>
+      <p class="more-info">Cauliflower florets, cornflour batter, soy-chilli sauce, garlic.</p>
+    </div>
+
+    <!-- STARTERS -->
+    <div class="food-card starters">
+      <img src="65.jpg" alt="Chicken 65">
+      <h3>Chicken 65</h3>
+      <p class="price">₹200</p>
+      <p class="rating">⭐ 4.5</p>
+      <button class="read-more-btn" onclick="toggleInfo(this)">Read More</button>
+      <p class="more-info">Boneless chicken, yoghurt marinade, curry leaves, red chilli.</p>
+    </div>
+
+    <div class="food-card starters">
+      <img src="dry.jpg" alt="Chilli Chicken">
+      <h3>Chilli Chicken (Dry)</h3>
+      <p class="price">₹220</p>
+      <p class="rating">⭐ 4.6</p>
+      <button class="read-more-btn" onclick="toggleInfo(this)">Read More</button>
+      <p class="more-info">Chicken cubes, capsicum, soy sauce, green chilli, garlic, ginger.</p>
+    </div>
+
+    <div class="food-card starters">
+      <img src="tik.jpg" alt="Paneer Tikka">
+      <h3>Paneer Tikka</h3>
+      <p class="price">₹190</p>
+      <p class="rating">⭐ 4.4</p>
+      <button class="read-more-btn" onclick="toggleInfo(this)">Read More</button>
+      <p class="more-info">Paneer cubes, hung curd, tandoori masala, bell peppers, onion.</p>
+    </div>
+
+    <div class="food-card starters">
+      <img src="fish.jpg" alt="Fish Fingers">
+      <h3>Fish Fingers</h3>
+      <p class="price">₹230</p>
+      <p class="rating">⭐ 4.3</p>
+      <button class="read-more-btn" onclick="toggleInfo(this)">Read More</button>
+      <p class="more-info">White-fish strips, breadcrumb coating, herbs, tartar dip on side.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<script>
+function toggleInfo(btn) {
+  const info = btn.nextElementSibling;
+  info.style.display = (info.style.display === 'block') ? 'none' : 'block';
+}
+</script>
+
+<footer class="footer-contact" id ="footer-contact">
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3>Contact Us</h3>
+      <p><strong>FlavorFuel</strong></p>
+      <p>Guntur , Andhra Pradesh - 522004</p>
+      <p>Phone: <a href="tel:+919988187444">+91 99881 87444</a></p>
+      <p>Email: <a href="mailto:info@flavorfuel.in">info@flavorfuel.in</a></p>
+      <p>Hours: 11 AM – 11 PM (Mon–Sun)</p>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <a href="#" title="Instagram">📸</a>
+      <a href="#" title="Facebook">📘</a>
+      <a href="#" title="Twitter">🐦</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 FlavorFuel. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
