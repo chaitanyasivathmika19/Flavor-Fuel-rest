@@ -21,9 +21,9 @@ The website highlights each dish along with **price, rating, and detailed ingred
 
 ## 📸 Screenshots  
 
-### 🏠 Homepage & Hero Section  
+### 🏠 Homepage & Hero Section & About Page
 <img width="1919" height="1004" alt="Homepage" src="https://github.com/user-attachments/assets/7f8402cb-fdf3-40de-80bf-ea0183ee675e" />  
-✨ The homepage introduces **Flavor Fuel** with the restaurant’s name, tagline, and a clean **navigation bar** that includes a hamburger menu for mobile users.  
+✨ The homepage introduces **Flavor Fuel** with the restaurant’s name, tagline, and a clean **navigation bar** that includes a hamburger menu for mobile users also about page is visible here.  
 
 ---
 
@@ -68,12 +68,6 @@ The website highlights each dish along with **price, rating, and detailed ingred
 
 
 ---
-
-<img width="1919" height="1004" alt="image" src="https://github.com/user-attachments/assets/7f8402cb-fdf3-40de-80bf-ea0183ee675e" />
-<img width="1919" height="1009" alt="image" src="https://github.com/user-attachments/assets/4625596d-38f9-4903-952e-7af684244737" />
-<img width="1919" height="1034" alt="image" src="https://github.com/user-attachments/assets/51dabf7d-048b-49a5-9e7a-3a2d516b6a6e" />
-
-
 
 ---
 
